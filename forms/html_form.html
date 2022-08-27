@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            justify-content: center;
+            display: flex;
+            height: 100vh;
+        }
+        .box{
+            margin-top: 130px;
+            width: 40%;
+            height: 65%;
+            border: 2px solid;
+            border-radius: 1.5rem;
+            text-align: center;
+            background-image: linear-gradient(to top right , rgb(0, 136, 255) , cyan);
+            
+        }
+        .data{
+            padding: 5px;
+            border: 1px solid rgb(194, 174, 174);
+            border-radius: 0.5rem;
+        }
+        .txt , select{
+            width: 400px;
+        }
+        input , select{
+            margin: 10px ;
+            background-color: aliceblue;
+        }
+        .fn{
+            width: 180px;
+        }
+        .tnc{
+            color: red
+        }      
+        .btn{
+            width: 150px;
+            color: aliceblue;
+            height: 30px;
+            border: 1px solid white;
+            border-radius: 0.5rem;
+            background-color: rgb(146, 230, 146);
+        }
+        .btn:hover{
+            color: black;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+       
+        <div class="box">
+            <h2>Registration Form</h2>
+            <form action="" method="post">
+                <input class="data fn" type="text" name="first name" placeholder="First Name" required >
+                <input class="data fn" type="text" name="surname" placeholder="Surname" required> <br>
+                <input class="data txt" type="text" placeholder="Mobile number or E-mail address"required> <br>
+                <input class="data txt" type="text"  name="Enrollment number" placeholder="Enrollment number" required><br>
+                <select class="data txt" name="course" id="" required >
+                  <option value="Course" selected disabled>Select Course</option>
+                  <option value="course">Graphic Desighning</option>
+                  <option value="course">Front-end Development</option>
+                  <option value="course">Back-end Development</option>
+                  <option value="course">Full-stack Development</option>
+                  <option value="course">App Development</option>
+                </select> <br>
+                <label  for="DOB">Date Of Birth:</label>
+                <input class="data " type="date" name="DOB" required> <br>
+                <br>
+                <input class="data" type="radio" name="gender" required>Female
+                <input class="data" type="radio" name="gender" required>Male
+                <br>
+                <p>By clicking Create an account, you agree to out <span class="tnc">Terms & Conditions </span></p>
+                <br>
+                <input class="btn" type="submit" name="submit">
+        
+            </form>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
