@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: aliceblue;
+            border-collapse: collapse;
+        }
+        tr,td,th{
+            border: 1px solid rgb(255, 231, 145);
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Hyperlink</h2>
+    <p>HTML Hyperlinks are created using &lt;a&gt;  tag. Formarly known as anchor tag, hyperlink defines a link &lt;a href=""&gt; in html document. A hyperlink links a webpage with other webpages and external pages. A hyperlink can be Internal Link, External Link, Internal Link, Mail Link or telephone link .</p>
+    <p>In HTML5, an hyperlink can contain both block level and inline level elements. That means, we can write text, image or a div inside hyperlink.</p>
+    <h2>Anchor Tag</h2>
+    <ul>
+        <li>
+            <p>The &lt;a&gt; tag defines a hyperlink, which is used to link from one page to another.</p>
+        </li>
+        <li>
+            <p>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.</p>
+        </li>
+        <p>
+            By default, links will appear as follows in all browsers:
+        </p>
+        <ul>
+            <li>An unvisited link is underlined and blue.</li> <br>
+            <li>A visited link is underlined and purple</li><br>
+            <li>An active link is underlined and red</li>
+        </ul>
+    </ul>
+    <p>Anchor tag has many attributes but some of are commonly use in comparatively others.like,</p>
+    <table>
+        <tr>
+            <th>Attribute</th>
+            <th>value</th>
+            <th>Discription</th>
+        </tr>
+        <tr>
+            <td>href</td>
+            <td>filename</td>
+            <td>Specifies that the target will be downloaded when a user clicks on the hyperlink</td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>_blank <br>_parent<br> _self <br> _top</td>
+            <td>Specifies where to open the linked document</td>
+        </tr>
+        <tr>
+            <td>mailto</td>
+            <td>user's email</td>
+            <td>To create a link that opens in the user's email program </td>
+        </tr>
+        <tr>
+            <td>tel</td>
+            <td>contact number</td>
+            <td>To create a link to a telephone number</td>
+
+        </tr>
+    </table>
+    <p><b>Examples:</b></p>
+    <ul>
+        <li>
+            <p>
+                <b>href :</b> for redirecting one page to other. 
+            </p>
+            <!-- for external link -->
+            <a href="https://www.google.com">Google</a>
+            <br>
+            <br>
+            <!-- targets to new page -->
+            <a href="https://www.google.com">Google new tab</a>
+        </li>    
+            <!-- for internal link  -->
+        <li>
+            <p>
+                <b>internal link</b>
+            </p>
+            <ul>
+                <li><a href="#A">InternAL-A</a></li><br>
+                <li><a href="#B">InternAL-B</a></li><br>
+                <li><a href="#C">InternAL-C</a></li><br>
+                <li><a href="#D">InternAL-D</a></li><br>
+            </ul>
+            <div id="A" style="height:500px; background-color: red;">A</div><br>
+            <div id="B" style="height:500px;background-color: green;">B</div><br>
+            <div id="C" style="height:500px; background-color: blue;">C</div><br>
+            <div id="D" style="height:500px; background-color: yellow;">D
+            <a href="#" target="_top">Top</a>
+            </div>
+        </li>    
+            <!-- for mail -->
+            <br>
+            <br>
+        <li>
+            <p><b>for mail:</b></p>
+            <a href="mailto:sakilkureshi05@gmail.com">connect with sakil kureshi via email<a>
+        </li>    
+            <!-- for contact -->
+            <br>
+            <br>
+            <br>
+        <li>    
+            <p><b>for contact:</b></p>
+            <a href="tel:1234567891">contact number</a>
+        </li>    
+    </ul>
+</body>
+</html>
