@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper{
+    height: 600px;
+    width: 900px;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.row{
+    flex: 0.5;
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.row-1{
+    background-color: aquamarine
+}
+
+.row-2{
+    background-color: aqua;
+}
+
+.form-wrapper input{
+    border:0;
+	height:50px;
+	border-radius:0;
+border-bottom:1px solid #ebebeb;
+}
+
+.error{
+    color: red;
+}
